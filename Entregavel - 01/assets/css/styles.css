@@ -1,0 +1,326 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- HEADER -----------------------------------*/
+
+.menu {
+   display: flex;
+   justify-content: center;
+   background-color: #eccc68;
+   height: 100px;
+}
+
+.menu ul {
+    display: flex;
+   /*  background-color: blueviolet;*/  
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu ul a:hover {
+    color: #57606f;
+}
+
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+ /*    background-color: aqua;  */
+    align-items: center;
+    width: 1000px;
+}
+
+.container-menu button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20% 1px;
+    border: 0;
+    background-color: #2f3542;
+    color: #ffffff;
+}
+
+.container-menu button:hover{
+    background-color: #a4b0be;
+    color:azure;
+    cursor: pointer ;
+}
+
+/* ----------------------------- BANNER -----------------------------------*/
+
+input[type=radio]{
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.container-banner-all{
+   /*  background-color: crimson; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.container-banner-all h1{
+    margin-bottom: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-banner {
+  width: 100%;
+  height: 300px;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  transform-style: preserve-3d;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-60%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked ~ .cards #song-1 img,
+#item-2:checked ~ .cards #song-2 img ,
+#item-3:checked ~ .cards #song-3 img{
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 0.47);
+}
+
+
+/*--------------------------- PEDIDOS ---------------------- */
+
+.container-orders{
+    height: 300px;
+    margin-top: 100px;
+}
+
+.container-orders h3 {
+    display: flex;
+    justify-content: center ;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.orders-photos{
+    margin-top: 10px;
+    background-color: #2f3542;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.organize{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organize span{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+
+.organize img {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+/*--------------------------- CONTATO ---------------------- */
+
+.container-contact {
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+
+.contact-form{
+    background-color: #57606f;
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-form form button{ 
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 0;
+    width: 100px;
+    height: 45px;
+    background-color: #eccc68;
+    color: #2f3542;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.contact-form form button:hover{ 
+    background-color: #c7a84b;
+    color: #13161d;
+} 
+
+.contact-map{
+    width: 450px;
+}
+
+.contact-map h3{
+    display: flex;
+    justify-content: center;
+    padding-right: 43px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --------------------------- footer  ---------------*/
+
+.container-footer{
+    margin-top: 100px;
+    background-color: #eccc68;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --------------- | --------- ESTILO DE CARDAPIO.HTML --------- | --------------- */
+
+.container{
+  /*   background-color: #c2cfeb; */
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25px;   
+    font-size: 30px
+}
+
+.card-order{
+    background-color: #2f3542;
+    width: 350px;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.card-order img {
+   width: 130px;
+   height: 130px;
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+} 
+
+.container-order{
+    margin-top: 20px;
+ /*    background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.card-position{
+    width: 133px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-position span{
+    font-size: 20px;
+}
+
+.card-position p{
+    font-size: 13px;
+}
+
+#p-price{
+    font-size: 20px;
+    color: #eccc68;
+}
