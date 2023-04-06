@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
   <header class="menu">
     <div class="container-menu">
       <ul>
         <img src="assets/img/logo.png" width="70" height="100" alt="Logo do Restaurante">
-        <a href="index.html"> Home </a> 
-        <a href="cardapio.html"> Cardápio </a> 
+        <a href="index.html"> Home </a>
+        <a href="cardapio.html"> Cardápio </a>
       </ul>
       <button>Logar</button>
     </div>
   </header>
 
 
-       <section class="container">
-        <h1>Nosso Cardápio</h1>
-        <div class="container-order">
-        <div class="card-order">
-          <div class="card-position">
+  <section class="container">
+    <div class="container-promotion">
+      <h2>Contador de Promoção!</h2>
+      <p>A próxima promoção começa em:</p>
+      <p id="counter"></p>
+    </div>
+    <h1>Nosso Cardápio</h1>
+    <div class="container-order">
+      <div class="card-order">
+        <div class="card-position">
           <Span>Hot Roll (8 un)</Span>
           <p>Peças empanadas de salmão grelhado, envolto por arroz e alga, com cebolinha e gergelim</p>
           <p id="p-price"> A partir de R$29,00</p>
         </div>
-          <img src="assets/img/hot-roll.jpg" alt="">
-        </div>
-        
-        <div class="card-order">
-          <div class="card-position">
+        <img src="assets/img/hot-roll.jpg" alt="">
+      </div>
+
+      <div class="card-order">
+        <div class="card-position">
           <span>Temaki</span>
           <p>Alga, arroz e o recheio de sua preferência.</p>
           <p id="p-price">A partir de R$13,00</p>
         </div>
-          <img src="assets/img/temaki.jpg" alt="">
-        </div>
+        <img src="assets/img/temaki.jpg" alt="">
+      </div>
 
-        <div class="card-order">
-          <div class="card-position">
+      <div class="card-order">
+        <div class="card-position">
           <span>Combo peq. (24 un)</span>
           <p>8 Kappamakis, 4 Uramakis Skin, 4 Uramakis de Salmão, 8 Hossomakis.</p>
           <p id="p-price">R$40,00</p>
         </div>
-          <img src="assets/img/combo.jpg" alt="">
-        </div>
+        <img src="assets/img/combo.jpg" alt="">
+      </div>
 
-        <div class="card-order">
-          <div class="card-position">
+      <div class="card-order">
+        <div class="card-position">
           <span>Rolinho Primavera (5 un)</span>
           <p>Rolinho crocante recheado com vegetais</p>
-          <p  id="p-price" >R$25,00</p>
+          <p id="p-price">R$25,00</p>
         </div>
-          <img src="assets/img/rolinhoprimavera.jpg" alt="">
-        </div>
+        <img src="assets/img/rolinhoprimavera.jpg" alt="">
+      </div>
 
-        <div class="card-order">
-          <div class="card-position">
+      <div class="card-order">
+        <div class="card-position">
           <span>Yakisoba</span>
           <p>Suculento Yakissoba com receita tradicional em porção individual bem servida, média de (700g)</p>
           <p id="p-price">R$29,00</p>
         </div>
-          <img src="assets/img/yakisoba.jpg" alt="">
-        </div>
+        <img src="assets/img/yakisoba.jpg" alt="">
+      </div>
 
-        <div class="card-order">
-          <div class="card-position">
+      <div class="card-order">
+        <div class="card-position">
           <span>Poke médio</span>
           <p>Com abacate, salmão, cebola roxa, cenoura, gergelim e arroz japonês</p>
           <p id="p-price">R$25,00</p>
-          </div>
-          <img src="assets/img/poke.jpg" alt="">
         </div>
+        <img src="assets/img/poke.jpg" alt="">
       </div>
-       </section>
+    </div>
+  </section>
 
-       <footer class="container-footer">
-        <span>© 2023 Lucky's Sushi - Todos os Direitos Reservados</span>
-      </footer>
+  <footer class="container-footer">
+    <span>© 2023 Lucky's Sushi - Todos os Direitos Reservados</span>
+  </footer>
 
-       
+  <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>

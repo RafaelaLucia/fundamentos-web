@@ -196,7 +196,7 @@ input[type=radio]{
 
 .contact-form{
     background-color: #57606f;
-    height: 350px;
+    height: 405px;
     width: 400px;
     border-radius: 10px;
     display: flex;
@@ -214,14 +214,24 @@ input[type=radio]{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 250px;
-    width: 250px;
+    height: 333px;
+    width: 334px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.contact-form form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#txtNome, #txtEmail, #txtAssunto{
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
 .contact-form form button{ 
-    margin-top: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 0;
     width: 100px;
     height: 45px;
@@ -230,6 +240,8 @@ input[type=radio]{
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
+    margin-left: 117px;
+    margin-top: 20px;
 }
 
 .contact-form form button:hover{ 
@@ -264,6 +276,9 @@ input[type=radio]{
 
 .container{
   /*   background-color: #c2cfeb; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container h1{
@@ -324,3 +339,23 @@ input[type=radio]{
     font-size: 20px;
     color: #eccc68;
 }
+
+.container-promotion{
+    background-color: #2f3542;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #eccc68;
+    height: 130px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-promotion p {
+    color: #c7a84b;
+}
+
+/** teste**/
