@@ -40,6 +40,7 @@ function validaAssunto() {
         txtAssunto.style.color = '#FFD570'
         txtAssunto.style.display = 'block'
         txtAssunto.style.fontFamily = 'Arial'
+        assuntoOk = false
     } else {
         txtAssunto.style.display = 'none'
         assuntoOk = true

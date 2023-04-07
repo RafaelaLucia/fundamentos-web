@@ -76,26 +76,26 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.1281423273197!2d139.22287736180644!3d35.72839502065354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019231899aa435f%3A0x68250a9171f4004a!2s68%20Itsukaichi%2C%20Akiruno%2C%20Tokyo%20190-0164%2C%20Jap%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680630765091!5m2!1spt-BR!2sbr"
           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+          referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()"
+          onmouseout="mapaNormal()"></iframe>
       </div>
 
       <div class="contact-form">
         <h3>Dúvidas? Entre em contato!</h3>
         <form>
-          <label for="nome">Nome: </label> 
+          <label for="nome">Nome: </label>
           <input type="text" id="nome" onkeyup="validaNome()">
           <div id="txtNome"></div>
-          <label for="email">E-mail: </label> 
+          <label for="email">E-mail: </label>
           <input type="email" id="email" onkeyup="validaEmail()">
           <div id="txtEmail"></div>
-          <label for="assunto">Assunto: </label> 
+          <label for="assunto">Assunto: </label>
           <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
           <div id="txtAssunto"></div>
           <button onclick="enviar()">Enviar</button>
         </form>
       </div>
     </div>
-
   </section>
 
   <footer class="container-footer">
